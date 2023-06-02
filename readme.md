@@ -18,13 +18,14 @@ The modified VGG16 model was fine-tuned by replacing the original classifier hea
 
 The model was trained using a total of 24,719 labeled images. Each image was associated with one of the seven bins: Plastic bottles and steel cans (deposed in supermarkets for money), cardboard bins, glass purple bins, organic bins for composting, different grocery packages for the orange bin, paper for the blue bin, and unrecyclable garbage, according to the Israeli recycling system.
 
+Link to the trained model: https://drive.google.com/file/d/1QPb0t7saohr-URBTr4DdJBMAj2Gy29Rs/view?usp=sharing
+
 ## Results
 
 After training the model, it achieved an accuracy of 0.95 and a loss of 0.2. These metrics demonstrate the model's effectiveness in classifying objects based on their recyclability. The high accuracy suggests that the model can provide reliable feedback to users regarding the appropriate bin for waste disposal.
 
 ## Repository Structure
 
-- `model`: Contains the trained VGG16 model weights and architecture.
 - `scripts`: Contains scripts for training the model and deploying the image recognition feature.
 - `examples`: Provides example images and instructions for running the image recognition feature.
 - `requirements.txt`: Lists the required Python packages and dependencies for running the project.
