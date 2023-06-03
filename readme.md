@@ -54,3 +54,10 @@ I would like to express my gratitude to the organizers of the Bootcamp at ITC fo
 
 
 ![](https://ashdodi.com/app/uploads/2022/12/3aa719c0-74b9-4eb2-ba47-3a04d5e0a5c5.jpg)
+
+## Examples
+
+![](bottle.jpg)
+![](wine.jpg)
+![](can.jpg)
+![](compost.jpg)
