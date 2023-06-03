@@ -2,7 +2,7 @@
     <img src="logo.svg" width="300" height="100">
 </div>  
 
-# 
+#
 SmartWaste is a project that was developed as part of the DATA SCIENCE: DEEP LEARNING, COMPUTER VISION & NLP Bootcamp at ITC. It participated in a Hackathon and won the 2nd place. The objective of the project is to implement an image recognition feature that allows users to take a photo of an item and receive instant feedback on whether it is recyclable or not and in which bin it should be disposed.
 
 ## Problem Statement
@@ -22,7 +22,7 @@ The modified VGG16 model was fine-tuned by replacing the original classifier hea
 The model was trained using a total of 24,719 labeled images. Each image was associated with one of the seven bins: Plastic bottles and steel cans (deposed in supermarkets for money), cardboard bins, glass purple bins, organic bins for composting, different grocery packages for the orange bin, paper for the blue bin, and unrecyclable garbage, according to the Israeli recycling system.
 
 Link to the trained model:  
-https://drive.google.com/file/d/1QPb0t7saohr-URBTr4DdJBMAj2Gy29Rs/view?usp=sharing
+https://drive.google.com/file/d/1TJSpf9wJYZSqIm5ytqXkU8RLuKJmmHHa/view?usp=sharing
 
 ## Results
 
