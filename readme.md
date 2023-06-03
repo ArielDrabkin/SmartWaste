@@ -23,7 +23,7 @@ https://drive.google.com/file/d/1QPb0t7saohr-URBTr4DdJBMAj2Gy29Rs/view?usp=shari
 
 ## Results
 
-After training the model, it achieved an accuracy of 0.95 and a loss of 0.2. These metrics demonstrate the model's effectiveness in classifying objects based on their recyclability. The high accuracy suggests that the model can provide reliable feedback to users regarding the appropriate bin for waste disposal.
+After training the model, it achieved an accuracy of 0.85 and a loss of 0.35. These metrics demonstrate the model's effectiveness in classifying objects based on their recyclability. The high accuracy suggests that the model can provide reliable feedback to users regarding the appropriate bin for waste disposal.
 
 ## Repository Structure
 
