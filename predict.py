@@ -5,7 +5,6 @@ import requests
 from io import BytesIO
 import timeit
 import matplotlib.pyplot as plt
-
 # Define the class labels for the model's output
 output_class = ["Plastic bottle/Can to deposit in Supermarkets", "Big Cardboard bin", "Unrecyclable garbage", "Glass - Purple bin", "Organic waste - Composter", "Grocery Packages - Orange bin", "Paper - Blue bin"]
 
@@ -50,10 +49,6 @@ def predict(file, is_url=False):
         output_class[i]: float(predicted_array[0][i])
         for i in range(len(output_class))
     }
-
-    # Display the image
-    plt.imshow(img)
-    plt.show()
 
     return pred_labels_and_probs
 
