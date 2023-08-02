@@ -52,7 +52,7 @@ python predict.py --image_path <path/to/image> [--is_url]
 - Use the `--is_url` flag if the image path is a URL. If the image is a local file path, you can omit this flag.
 5. The script will analyze the image and output the predicted bin for waste disposal.
 
-### Graphical User Interface (GUI) Usage
+### Gradio Inference Usage (GUI) 
 
 SmartWaste also provides a friendly GUI made with Gradio. Here's how you can use it:
 
