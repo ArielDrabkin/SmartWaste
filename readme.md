@@ -82,7 +82,7 @@ Feel free to explore the repository for additional functionalities and resources
 
 ## Acknowledgments
 
-I would like to express my gratitude to the organizers of the Bootcamp at ITC for providing the platform to develop and showcase the project. Additionally, I extend my appreciation to the team members who contributed to the success of SmartWaste.
+I would like to express my gratitude to the organizers of the Bootcamp at ITC for providing the platform to develop and showcase the project.
 
 
 ![](https://ashdodi.com/app/uploads/2022/12/3aa719c0-74b9-4eb2-ba47-3a04d5e0a5c5.jpg)
