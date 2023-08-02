@@ -30,17 +30,19 @@ After training the model, it achieved an accuracy of 0.85 and a loss of 0.35. Th
 
 ## Repository Structure
 
-- `scripts`: Contains scripts for training the model and deploying the image recognition feature.
-- `examples`: Provides example images and instructions for running the image recognition feature.
+- `scripts`: Contains scripts for training the model and deploying the image recognition feature with a CLI and GUI.
+- `images`: Provides example images and instructions for running the image recognition feature.
 - `requirements.txt`: Lists the required Python packages and dependencies for running the project.
 
 ## Usage
 
 To use the SmartWaste image recognition feature, follow these steps:
 
+### Command Line Usage
+
 1. Install the required dependencies by running `pip install -r requirements.txt`.
-2. Download the pre-trained VGG16 model weights from the repository's `model` directory.
-3. Prepare an image to be classified. Ensure that the image is in JPEG format (.jpg/.jpeg) and the item is on a uniform background.
+2. Prepare an image to be classified. Ensure that the image is in JPEG format (.jpg/.jpeg) and the item is on a uniform background.
+3. Navigate to the `scripts` folder in the repository.
 4. Run the `predict.py` script using the following command:
 ```sh
 python predict.py --image_path <path/to/image> [--is_url]
@@ -49,7 +51,33 @@ python predict.py --image_path <path/to/image> [--is_url]
 - Use the `--is_url` flag if the image path is a URL. If the image is a local file path, you can omit this flag.
 5. The script will analyze the image and output the predicted bin for waste disposal.
 
+### Graphical User Interface (GUI) Usage
+
+SmartWaste also provides a friendly GUI made with Gradio. Here's how you can use it:
+
+1. Install the required dependencies by running `pip install -r requirements.txt`.
+2. Navigate to the `scripts` folder in the repository.
+3. Run the `app.py` script to launch the GUI:
+```sh
+python SmartWaste app.py
+```
+5. Once the GUI has launched, upload the image you want to classify.
+6. The application will analyze the image and display the predicted bin for waste disposal.
+
+**Note:** The model will be downloaded automatically when you run the script for the first time. This may take a few minutes.
+
 Feel free to explore the repository for additional functionalities and resources.
+
+## Examples
+### Command Line Usage
+![](images/bottle.jpg)
+![](images/wine.jpg)
+![](images/can.jpg)
+![](images/compost.jpg)
+
+### SmartWaste app Usage 
+![](images/smartwaste.jpg)
+
 
 ## Acknowledgments
 
@@ -57,10 +85,3 @@ I would like to express my gratitude to the organizers of the Bootcamp at ITC fo
 
 
 ![](https://ashdodi.com/app/uploads/2022/12/3aa719c0-74b9-4eb2-ba47-3a04d5e0a5c5.jpg)
-
-## Examples
-
-![](images/bottle.jpg)
-![](images/wine.jpg)
-![](images/can.jpg)
-![](images/compost.jpg)
