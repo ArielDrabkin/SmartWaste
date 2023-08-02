@@ -1,5 +1,5 @@
 <div style="text-align:right">
-    <img src="images/logo.svg" width="300" height="100">
+    <img src="examples/logo.svg" width="300" height="100">
 </div>  
 
 #
@@ -71,13 +71,13 @@ Feel free to explore the repository for additional functionalities and resources
 
 ## Examples
 ### Command Line Usage
-![](images/bottle.jpg)
-![](images/wine.jpg)
-![](images/can.jpg)
-![](images/compost.jpg)
+![](examples/bottle.jpg)
+![](examples/wine.jpg)
+![](examples/can.jpg)
+![](examples/compost.jpg)
 
 ### SmartWaste app Usage 
-![](images/smartwaste.jpg)
+![](examples/smartwaste.jpg)
 
 
 ## Acknowledgments

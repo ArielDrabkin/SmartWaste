@@ -9,6 +9,7 @@ import gdown
 # Define the class labels for the model's output
 output_class = ["Plastic bottle/Can to deposit in Supermarkets", "Big Cardboard bin", "Unrecyclable garbage", "Glass - Purple bin", "Organic waste - Composter", "Grocery Packages - Orange bin", "Paper - Blue bin"]
 
+# Download the pre-trained model
 url = 'https://drive.google.com/uc?export=download&id=1TJSpf9wJYZSqIm5ytqXkU8RLuKJmmHHa'
 output = 'vgg16_model_after_one_epoch.h5'
 gdown.download(url, output, quiet=False)
@@ -76,14 +77,16 @@ def check_item(file_path, is_url=False):
     ind = np.argmax(list(prediction_dict.values()))
     predicted_class = list(prediction_dict.keys())[ind]
     predicted_prob = list(prediction_dict.values())[ind]
-    print(f"1st Prediction probabilities: {predicted_class} {predicted_prob:.2f}")
+    predicted_prob = f"{predicted_prob:.2f}"
+    print(f"1st Prediction probabilities: {predicted_class} {predicted_prob}")
 
     # Get the index of the second highest prediction
     sorted_probs = np.sort(list(prediction_dict.values()))
     ind2 = np.argsort(list(prediction_dict.values()))[-2]
     predicted_class2 = list(prediction_dict.keys())[ind2]
     predicted_prob2 = sorted_probs[-2]
-    print(f"2nd Prediction probabilities: {predicted_class2} {predicted_prob2:.2f}")
+    predicted_prob2 = f"{predicted_prob2:.2f}"
+    print(f"2nd Prediction probabilities: {predicted_class2} {predicted_prob2}")
     return predicted_class, predicted_prob, predicted_class2, predicted_prob2
 
 if __name__ == "__main__":
