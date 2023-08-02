@@ -26,7 +26,7 @@ def image_identity(image):
     image = Image.fromarray((image * 255).astype(np.uint8))
 
     # Load the classification and image data from the JSON file
-    with open('Bins.json', 'r') as f:
+    with open('../Bins.json', 'r') as f:
         bins_dict = json.load(f)
 
     # Retrieve the class labels and bin images from the dictionary

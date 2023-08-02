@@ -31,7 +31,8 @@ After training the model, it achieved an accuracy of 0.85 and a loss of 0.35. Th
 ## Repository Structure
 
 - `scripts`: Contains scripts for training the model and deploying the image recognition feature with a CLI and GUI.
-- `images`: Provides example images and instructions for running the image recognition feature.
+- `Bins.json`: Contains the labels for the 7 different bins and urls for corresponding images.
+- `examples`: Provides example images and instructions for running the image recognition feature.
 - `requirements.txt`: Lists the required Python packages and dependencies for running the project.
 
 ## Usage
