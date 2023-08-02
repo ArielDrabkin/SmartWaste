@@ -1,5 +1,5 @@
 <div style="text-align:right">
-    <img src="logo.svg" width="300" height="100">
+    <img src="images/logo.svg" width="300" height="100">
 </div>  
 
 #
@@ -60,7 +60,7 @@ I would like to express my gratitude to the organizers of the Bootcamp at ITC fo
 
 ## Examples
 
-![](bottle.jpg)
-![](wine.jpg)
-![](can.jpg)
-![](compost.jpg)
+![](images/bottle.jpg)
+![](images/wine.jpg)
+![](images/can.jpg)
+![](images/compost.jpg)
