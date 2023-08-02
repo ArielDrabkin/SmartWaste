@@ -78,6 +78,7 @@ Feel free to explore the repository for additional functionalities and resources
 ![](examples/compost.jpg)
 
 ### SmartWaste app Usage 
+![](examples/smartwaste-start.jpg)
 ![](examples/smartwaste.jpg)
 
 
