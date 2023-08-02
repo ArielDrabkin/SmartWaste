@@ -3,7 +3,7 @@
 </div>  
 
 #
-SmartWaste is a project that was developed as part of the DATA SCIENCE: DEEP LEARNING, COMPUTER VISION & NLP Bootcamp at ITC. It participated in a Hackathon and won the 2nd place. The objective of the project is to implement an image recognition feature that allows users to take a photo of an item and receive instant feedback on whether it is recyclable or not and in which bin it should be disposed.
+SmartWaste is a project that was developed as part of the DATA SCIENCE: DEEP LEARNING, COMPUTER VISION & NLP Bootcamp at ITC. It participated in a "Smart-Cities" Hackathon and won the 2nd place. The objective of the project is to implement an image recognition feature that allows users to take a photo of an item and receive instant feedback on whether it is recyclable or not and in which bin it should be disposed.
 
 ## Problem Statement
 
