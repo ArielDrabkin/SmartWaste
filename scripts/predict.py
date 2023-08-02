@@ -4,14 +4,20 @@ import numpy as np
 import requests
 from io import BytesIO
 import timeit
+import gdown
+
 # Define the class labels for the model's output
 output_class = ["Plastic bottle/Can to deposit in Supermarkets", "Big Cardboard bin", "Unrecyclable garbage", "Glass - Purple bin", "Organic waste - Composter", "Grocery Packages - Orange bin", "Paper - Blue bin"]
 
+url = 'https://drive.google.com/uc?export=download&id=1TJSpf9wJYZSqIm5ytqXkU8RLuKJmmHHa'
+output = 'vgg16_model_after_one_epoch.h5'
+gdown.download(url, output, quiet=False)
+
 # Load the pre-trained model
-model = load_model("vgg16_model_after_one_epoch.h5")
+model = load_model(output)
 
 
-def predict(file, is_url=False):
+def predict(img_input, is_url=False):
     """
     Function to predict the class labels and probabilities of an input image.
 
@@ -23,13 +29,16 @@ def predict(file, is_url=False):
         dict: A dictionary containing the predicted class labels as keys and
               their corresponding probabilities as values.
     """
-    if is_url is True:
-        # Download the image from the URL
-        response = requests.get(file)
-        img = Image.open(BytesIO(response.content))
+    if isinstance(img_input, str):
+        if is_url is True:
+            # Download the image from the URL
+            response = requests.get(img_input)
+            img = Image.open(BytesIO(response.content))
+        else:
+            # Open the image file from the local file path
+            img = Image.open(img_input)
     else:
-        # Open the image file from the local file path
-        img = Image.open(file)
+        img = img_input
 
     # Resize the image to match the input size expected by the model (224x224)
     resized_image = img.resize((224, 224))
@@ -75,7 +84,7 @@ def check_item(file_path, is_url=False):
     predicted_class2 = list(prediction_dict.keys())[ind2]
     predicted_prob2 = sorted_probs[-2]
     print(f"2nd Prediction probabilities: {predicted_class2} {predicted_prob2:.2f}")
-
+    return predicted_class, predicted_prob, predicted_class2, predicted_prob2
 
 if __name__ == "__main__":
     # Prompt the user to enter the file path to the input image
