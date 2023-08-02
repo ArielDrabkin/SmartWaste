@@ -77,8 +77,12 @@ Feel free to explore the repository for additional functionalities and resources
 ![](examples/can.jpg)
 ![](examples/compost.jpg)
 
-### SmartWaste app Usage 
+### SmartWaste app Usage
+#### 1. Select the image you want to classify
 ![](examples/smartwaste-start.jpg)
+##### 2. Press send to analyze the image and display the predicted bin for waste disposal
+![](examples/smartwaste2.jpg)
+##### 3. Get the predicted result
 ![](examples/smartwaste.jpg)
 
 
