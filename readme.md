@@ -59,10 +59,11 @@ SmartWaste also provides a friendly GUI made with Gradio. Here's how you can use
 2. Navigate to the `scripts` folder in the repository.
 3. Run the `app.py` script to launch the GUI:
 ```sh
-python SmartWaste app.py
+python SmartWaste.py
 ```
-5. Once the GUI has launched, upload the image you want to classify.
-6. The application will analyze the image and display the predicted bin for waste disposal.
+5. Lunch the GUI by running the link provided as an ouput in the terminal by gradio.
+6. Once the GUI has launched, upload the image you want to classify.
+7. The application will analyze the image and display the predicted bin for waste disposal.
 
 **Note:** The model will be downloaded automatically when you run the script for the first time. This may take a few minutes.
 
