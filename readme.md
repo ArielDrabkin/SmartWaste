@@ -19,7 +19,7 @@ Data augmentation techniques were applied to increase the diversity and size of 
 
 The modified VGG16 model was fine-tuned by replacing the original classifier head with custom layers. The output layer consisted of 7 units, representing the 7 different bins for recycling. Softmax activation was used to produce probabilistic outputs, indicating the likelihood of an item belonging to each bin.
 
-The model was trained using a total of 24,719 labeled images. Each image was associated with one of the seven bins: Plastic bottles and steel cans (deposed in supermarkets for money), cardboard bins, glass purple bins, organic bins for composting, different grocery packages for the orange bin, paper for the blue bin, and unrecyclable garbage, according to the Israeli recycling system.
+The model was trained using a total of 24,719 labeled images taken from the web. Each image was associated with one of the seven bins: Plastic bottles and steel cans (deposed in supermarkets for money), cardboard bins, glass purple bins, organic bins for composting, different grocery packages for the orange bin, paper for the blue bin, and unrecyclable garbage, according to the Israeli recycling system.
 
 Link to the trained model:  
 https://drive.google.com/file/d/1TJSpf9wJYZSqIm5ytqXkU8RLuKJmmHHa/view?usp=sharing
